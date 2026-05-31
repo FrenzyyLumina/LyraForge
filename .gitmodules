@@ -1,10 +1,10 @@
 [submodule "LyraForge/External/luau"]
 	path = LyraForge/External/luau
 	url = https://github.com/luau-lang/luau
+[submodule "LyraForge/External/glfw"]
+	path = LyraForge/External/glfw
+	url = https://github.com/glfw/glfw
 [submodule "LyraForge/External/dear-imgui"]
 	path = LyraForge/External/dear-imgui
 	url = https://github.com/ocornut/imgui.git
 	branch = docking	
-[submodule "LyraForge/External/glfw"]
-	path = LyraForge/External/glfw
-	url = https://github.com/glfw/glfw
