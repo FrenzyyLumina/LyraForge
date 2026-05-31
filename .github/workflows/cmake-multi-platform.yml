@@ -50,9 +50,10 @@ jobs:
         submodules: recursive
         
     - name: Setup Vulkan SDK
-      uses: humbletim/setup-vulkan@v1
+      uses: humbletim/setup-vulkan-sdk@v1.2.0
       with:
         vulkan-query-version: 1.3.268.0 
+        vulkan-components: Vulkan-Headers, Vulkan-Loader
         
     - name: Set reusable strings
       # Turn repeated input strings (such as the build output directory) into step outputs. These step outputs can be used throughout the workflow file.
