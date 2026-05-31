@@ -7,4 +7,4 @@
 [submodule "LyraForge/External/dear-imgui"]
 	path = LyraForge/External/dear-imgui
 	url = https://github.com/ocornut/imgui.git
-	branch = docking	
+	branch = docking
