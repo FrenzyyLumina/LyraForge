@@ -25,8 +25,6 @@ set(VENDOR_DIR "${PROJ_ROOT}/External/vendor")
 
 # LyraForge.exe
 add_executable(${PROJECT_NAME} App/main.cpp)
-target_include_directories(${PROJECT_NAME} PRIVATE Core)
 
-# Find System Dependencies
+# System Dependencies
 find_package(Vulkan REQUIRED)
-target_link_libraries(${PROJECT_NAME} PRIVATE glfw Vulkan::Vulkan)
