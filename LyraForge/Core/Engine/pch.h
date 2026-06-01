@@ -15,7 +15,3 @@
 #include <sstream>
 #include <stdexcept>
 #include <cmath>
-
-// Third-party libraries
-
-// Engine 

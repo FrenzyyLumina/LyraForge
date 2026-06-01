@@ -1,4 +1,4 @@
-#include "pch.h"
+#include <iostream>
 #include "application.h"
 
 namespace LyraForge {

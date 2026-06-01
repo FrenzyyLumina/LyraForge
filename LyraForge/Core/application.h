@@ -8,6 +8,7 @@
 
 namespace LyraForge {
     class Application {
+    public:
         void HelloTriangle();
     };
 }
