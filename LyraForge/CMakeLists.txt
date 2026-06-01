@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 4.1)
 
 # LyraForge Version 0.1.0 "Andromeda" 
-project(LyraForge VERSION 0.1.0 LANGUAGES CXX)
+project(LyraForgeApp VERSION 0.1.0 LANGUAGES CXX)
 
 # Global settings
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)  # For IDE support
@@ -24,10 +24,9 @@ set(PROJ_ROOT "${CMAKE_SOURCE_DIR}")
 set(VENDOR_DIR "${PROJ_ROOT}/External/vendor")
 
 # LyraForge.exe
-add_executable(${PROJECT_NAME} app/main.cpp)
-add_subdirectory(External)
+add_executable(${PROJECT_NAME} App/main.cpp)
 target_include_directories(${PROJECT_NAME} PRIVATE Core)
 
-# System Dependencies
+# Find System Dependencies
 find_package(Vulkan REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE glfw Vulkan::Vulkan)
