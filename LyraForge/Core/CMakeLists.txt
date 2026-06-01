@@ -3,9 +3,6 @@ cmake_minimum_required(VERSION 4.1)
 project(LyraForge VERSION 0.1.0)
 
 
-# External Libraries
-
-
 # Library
 add_library(${PROJECT_NAME}
     application.h

@@ -21,10 +21,16 @@ endif()
 
 # Paths
 set(PROJ_ROOT "${CMAKE_SOURCE_DIR}")
-set(VENDOR_DIR "${PROJ_ROOT}/External/vendor")
-
-# LyraForge.exe
-add_executable(${PROJECT_NAME} App/main.cpp)
+set(VENDOR_DIR "${PROJ_ROOT}/External")
 
 # System Dependencies
 find_package(Vulkan REQUIRED)
+
+# Subdirectories
+add_subdirectory(Core)
+add_subdirectory(External)
+
+# LyraForge.exe
+add_executable(${PROJECT_NAME} App/main.cpp)
+target_link_libraries(${PROJECT_NAME} PRIVATE LyraForge)
+link_libraries(LyraForgeApp LyraForge)
