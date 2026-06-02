@@ -8,6 +8,8 @@ add_library(${PROJECT_NAME}
     application.h
     application.cpp
     Engine/pch.h
+    Engine/engine.h
+    Engine/engine.cpp
 )
 
 target_include_directories(${PROJECT_NAME}

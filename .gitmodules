@@ -4,16 +4,22 @@
 [submodule "LyraForge/External/glfw"]
 	path = LyraForge/External/glfw
 	url = https://github.com/glfw/glfw
+
 [submodule "LyraForge/External/glm"]
 	path = LyraForge/External/glm
 	url =  https://github.com/g-truc/glm
+
 [submodule "LyraForge/External/vk-bootstrap"]
 	path = LyraForge/External/vk-bootstrap
 	url = https://github.com/charles-lunarg/vk-bootstrap
+
 [submodule "LyraForge/External/VulkanMemoryAllocator"]
 	path = LyraForge/External/VulkanMemoryAllocator
 	url = https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator
+
 [submodule "LyraForge/External/dear-imgui"]
 	path = LyraForge/External/dear-imgui
 	url = https://github.com/ocornut/imgui.git
 	branch = docking
+
+	

@@ -32,5 +32,14 @@ add_subdirectory(External)
 
 # LyraForge.exe
 add_executable(${PROJECT_NAME} App/main.cpp)
-target_link_libraries(${PROJECT_NAME} PRIVATE LyraForge)
-link_libraries(LyraForgeApp LyraForge)
+target_include_directories(${PROJECT_NAME} PRIVATE 
+    Core 
+    Core/Engine
+    External
+    External/glfw/include
+    ${Vulkan_INCLUDE_DIRS}
+)
+target_link_libraries(${PROJECT_NAME} PRIVATE 
+    LyraForge 
+    Vulkan::Vulkan
+)
