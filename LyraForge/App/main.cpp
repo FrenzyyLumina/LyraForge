@@ -16,13 +16,38 @@
 #include "pch.h"
 #include "application.h"
 
+
+
 using namespace LyraForge;
 
+// using namespace LyraForge::Services;
 
-class Andromeda : public Application {
+static const unsigned int MajorVersion = 0;
+static const unsigned int MinorVersion = 1;
+static const unsigned int PatchVersion = 0;
+
+
+class DemoApplication : public Application {
     public:
-        Andromeda() {
-            std::cout << "This is voodoo; the question is - is this too much. And this is the hardest question you could ever face in programming." << std::endl;
+        DemoApplication() : Application({1280, 720}, "LyraForge - Andromeda") { //king of boilerplate coding
+
+            // should be moved to application.cpp after testing
+            if (!glfwInit()) {
+                throw std::runtime_error("Failed to initialize GLFW");
+            }
+
+            glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
+            glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+
+
+            GLFWwindow*window = glfwCreateWindow(1280, 720, "LyraForge - Andromeda", nullptr, nullptr); // this is already too much voodoo but necessary
+            
+            if (!window) {
+                throw std::runtime_error("Failed to create GLFW window");
+                glfwTerminate();
+            }
+
+
         }
 };
 
